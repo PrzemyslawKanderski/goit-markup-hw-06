@@ -53,7 +53,6 @@ body {
 }
 .menu {
   display: flex;
-  /* max-width: 261 px; */
   height: 16px;
   flex-grow: 1;
 }
@@ -345,6 +344,33 @@ h3 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.form-modal {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 72px;
+  text-align: center;
+}
+label {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 0.8;
+  text-align: left;
+  color: var(--light-slate);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-color: var(--light-slate);
+  border-radius: 2px;
+  width: 360px;
+  height: 58px;
+}
+input {
+  align-items: start;
 }
 .buttons-portfolio {
   background-color: var(--cloud);

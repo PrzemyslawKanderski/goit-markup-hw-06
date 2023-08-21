@@ -436,6 +436,30 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form-modal" name="order_form" autocomplete="on" novalidate>
+          Leave your contacts and we will call you back<label for="name"
+            >name<input type="user_name" name="name" id="user_name"
+          /></label>
+          <label for="phone" autocomplete="on" novalidate
+            >phone<input type="phone" name="phone" id="phone" />
+          </label>
+          <label for="email" autocomplete="on" novalidate
+            >email<input type="email" name="email" id="email" />
+          </label>
+          <label for="comment" novalidate
+            >comment<textarea
+              name="comment"
+              rows="5"
+              placeholder="text input"
+            ></textarea>
+          </label>
+          <label for="checkbox">
+            <input type="checkbox" name="checkbox" /> I accept terms and
+            conditions of the <a href="#"> Privacy Policy</a>
+          </label>
+          <button type="submit" class="button-main">Send</button>
+        </form>
+
         <button type="button" class="close-btn" data-modal-close>X</button>
       </div>
     </div>
