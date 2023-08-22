@@ -407,6 +407,9 @@ h3 {
   width: 360px;
   resize: none;
 }
+.textarea-modal:hover {
+  border: 2px solid var(--ocean);
+}
 .label-checkbox-modal {
   font-family: "Roboto";
   font-weight: 200;
@@ -707,14 +710,18 @@ h3 {
   gap: 24px;
 }
 .input-footer {
+  color: var(--cornflower);
   box-sizing: border-box;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   width: 264px;
   height: 40px;
   background-color: var(--navy-blue);
+  padding-left: 15px;
 }
 .button-footer {
+  justify-content: space-between;
+
   position: relative;
   width: 165px;
   height: 40px;
@@ -723,16 +730,20 @@ h3 {
   border-radius: 4px;
   border: none;
 }
+
 .button-footer-text {
-  text-align: left;
+  position: absolute;
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71;
-  color: var(--h1-color);
-  margin-top: 5px;
+  color: var(--cornflower);
+  left: 30px;
+  top: 8px;
   font-style: normal;
 }
 .button-svg {
   position: absolute;
-  fill: var(--h1-color);
+  fill: var(--cornflower);
+  right: 40px;
+  top: 8px;
 }
