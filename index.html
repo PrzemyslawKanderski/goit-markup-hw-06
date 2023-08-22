@@ -437,27 +437,39 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form-modal" name="order_form" autocomplete="on" novalidate>
-          Leave your contacts and we will call you back<label for="name"
-            >name<input type="user_name" name="name" id="user_name"
+          Leave your contacts and we will call you back<label
+            class="label-modal"
+            for="name"
+            ><span class="text-label-modal">Name</span>
+            <input
+              class="input-modal"
+              type="user_name"
+              name="name"
+              id="user_name"
           /></label>
-          <label for="phone" autocomplete="on" novalidate
-            >phone<input type="phone" name="phone" id="phone" />
+          <label class="label-modal" for="phone" autocomplete="on" novalidate
+            ><span class="text-label-modal">Phone</span
+            ><input class="input-modal" type="phone" name="phone" id="phone" />
           </label>
-          <label for="email" autocomplete="on" novalidate
-            >email<input type="email" name="email" id="email" />
+          <label class="label-modal" for="email" autocomplete="on" novalidate
+            ><span class="text-label-modal">Email</span
+            ><input class="input-modal" type="email" name="email" id="email" />
           </label>
-          <label for="comment" novalidate
-            >comment<textarea
+          <label class="label-modal" for="comment" novalidate
+            ><span class="text-label-modal">Comment</span
+            ><textarea
+              class="textarea-modal"
               name="comment"
-              rows="5"
+              rows="8"
               placeholder="text input"
             ></textarea>
           </label>
-          <label for="checkbox">
-            <input type="checkbox" name="checkbox" /> I accept terms and
-            conditions of the <a href="#"> Privacy Policy</a>
+          <label class="label-checkbox-modal" for="checkbox">
+            <input type="checkbox" name="checkbox" />
+            I accept terms and conditions of the <a href="#"> Privacy Policy</a>
           </label>
-          <button type="submit" class="button-main">Send</button>
+
+          <button type="submit" class="button-modal">Send</button>
         </form>
 
         <button type="button" class="close-btn" data-modal-close>X</button>
