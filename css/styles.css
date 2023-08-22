@@ -360,15 +360,17 @@ h3 {
   font-weight: 100;
   font-size: 12px;
   line-height: 0.8;
-  text-align: left;
   border-color: var(--light-slate);
   color: var(--light-slate);
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
+
 .labels-modal {
   display: flex;
+}
+.labels-modal:hover {
+  color: var(--ocean);
 }
 .text-label-modal {
   font-family: inherit;
@@ -376,24 +378,33 @@ h3 {
 }
 .svg-modal {
   position: absolute;
-  top: 118px;
-  left: 27px;
+  margin-top: 20px;
+
+  margin-left: 10px;
 }
 .input-modal {
-  padding-left: 20px;
-  border-color: var(--light-slate);
-  border-radius: 2px;
+  box-sizing: border-box;
+  border-color: 2px solid var(--light-slate);
+  border-radius: 4px;
   width: 360px;
   height: 40px;
   margin-bottom: 1em;
+  padding-left: 25px;
   position: relative;
+}
+.input-modal:hover {
+  border-color: var(--ocean);
 }
 
 .textarea-modal {
+  box-sizing: border-box;
+  border-color: 2px solid var(--light-slate);
+  border-radius: 4px;
   padding-left: 5px;
   border-color: var(--light-slate);
   border-radius: 2px;
   width: 360px;
+  resize: none;
 }
 .label-checkbox-modal {
   font-family: "Roboto";
@@ -627,6 +638,7 @@ h3 {
 }
 .container-address {
   display: flex;
+
   gap: 120px;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -682,4 +694,42 @@ h3 {
   max-width: 208px;
   max-height: 80px;
   gap: 16px;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.f-form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.input-footer {
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: var(--navy-blue);
+}
+.button-footer {
+  position: relative;
+  width: 165px;
+  height: 40px;
+  background-color: var(--ocean);
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button-footer-text {
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--h1-color);
+  margin-top: 5px;
+  font-style: normal;
+}
+.button-svg {
+  position: absolute;
+  fill: var(--h1-color);
 }
