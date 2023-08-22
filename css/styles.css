@@ -369,9 +369,10 @@ h3 {
 .labels-modal {
   display: flex;
 }
-.labels-modal:hover {
-  color: var(--ocean);
-}
+/* .labels-modal:hover {
+  border: 2px solid var(--ocean);
+  fill: var(--ocean);
+} */
 .text-label-modal {
   font-family: inherit;
   text-align: start;
@@ -384,7 +385,7 @@ h3 {
 }
 .input-modal {
   box-sizing: border-box;
-  border-color: 2px solid var(--light-slate);
+  border: 2px solid var(--light-slate);
   border-radius: 4px;
   width: 360px;
   height: 40px;
@@ -393,15 +394,15 @@ h3 {
   position: relative;
 }
 .input-modal:hover {
-  border-color: var(--ocean);
+  border: 2px solid var(--ocean);
+  fill: var(--ocean);
 }
 
 .textarea-modal {
   box-sizing: border-box;
-  border-color: 2px solid var(--light-slate);
+  border: 2px solid var(--light-slate);
   border-radius: 4px;
   padding-left: 5px;
-  border-color: var(--light-slate);
   border-radius: 2px;
   width: 360px;
   resize: none;
@@ -707,6 +708,7 @@ h3 {
 }
 .input-footer {
   box-sizing: border-box;
+  border: 1px solid var(--cornflower);
   border-radius: 4px;
   width: 264px;
   height: 40px;
@@ -719,6 +721,7 @@ h3 {
   background-color: var(--ocean);
   cursor: pointer;
   border-radius: 4px;
+  border: none;
 }
 .button-footer-text {
   text-align: left;
