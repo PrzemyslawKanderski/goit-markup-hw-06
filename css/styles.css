@@ -385,7 +385,7 @@ h3 {
 }
 .input-modal {
   box-sizing: border-box;
-  border: 2px solid var(--light-slate);
+  border: 1px solid var(--light-slate);
   border-radius: 4px;
   width: 360px;
   height: 40px;
@@ -393,23 +393,32 @@ h3 {
   padding-left: 25px;
   position: relative;
 }
-.input-modal:hover {
-  border: 2px solid var(--ocean);
+.input-modal:hover,
+.input-modal:focus {
+  border: 1px solid var(--ocean);
+  border-radius: 4px;
+  outline: none;
+}
+.label-modal:hover,
+.label-modal:focus-within {
   fill: var(--ocean);
 }
 
 .textarea-modal {
   font-family: Roboto;
   box-sizing: border-box;
-  border: 2px solid var(--light-slate);
+  border: 1px solid var(--light-slate);
   border-radius: 4px;
   padding-left: 5px;
-  border-radius: 2px;
+  border-radius: 4px;
   width: 360px;
   resize: none;
 }
-.textarea-modal:hover {
-  border: 2px solid var(--ocean);
+.textarea-modal:hover,
+.textarea-modal:focus {
+  border: 1px solid var(--ocean);
+  border-radius: 4px;
+  outline: none;
 }
 .label-checkbox-modal {
   font-family: "Roboto";
