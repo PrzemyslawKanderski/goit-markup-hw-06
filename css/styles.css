@@ -369,17 +369,17 @@ h3 {
 .labels-modal {
   display: flex;
 }
-/* .labels-modal:hover {
-  border: 2px solid var(--ocean);
-  fill: var(--ocean);
-} */
+.modal-header {
+  padding-bottom: 5px;
+}
 .text-label-modal {
   font-family: inherit;
   text-align: start;
+  margin-bottom: 5px;
 }
 .svg-modal {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 25px;
 
   margin-left: 10px;
 }
@@ -399,6 +399,7 @@ h3 {
 }
 
 .textarea-modal {
+  font-family: Roboto;
   box-sizing: border-box;
   border: 2px solid var(--light-slate);
   border-radius: 4px;
